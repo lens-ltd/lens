@@ -1,0 +1,29 @@
+{
+  "staging": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-lens-staging-170952-authRole",
+      "UnauthRoleArn": "arn:aws:iam::049778465641:role/amplify-lens-staging-170952-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::049778465641:role/amplify-lens-staging-170952-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-lens-staging-170952-deployment",
+      "UnauthRoleName": "amplify-lens-staging-170952-unauthRole",
+      "StackName": "amplify-lens-staging-170952",
+      "StackId": "arn:aws:cloudformation:us-east-1:049778465641:stack/amplify-lens-staging-170952/e91a0ae0-e69f-11ed-bf3e-0e06081e3865",
+      "AmplifyAppId": "d26acqe9zi0xo4"
+    },
+    "categories": {
+      "hosting": {
+        "amplifyhosting": {
+          "appId": "d26acqe9zi0xo4",
+          "type": "cicd"
+        }
+      },
+      "auth": {
+        "lensda7953a6": {}
+      },
+      "storage": {
+        "lens": {}
+      }
+    }
+  }
+}

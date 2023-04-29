@@ -1,0 +1,194 @@
+.nav_logo {
+    width: 10rem;
+    font-weight: 700;
+    padding: 1rem;
+    cursor: pointer;
+}
+
+/**
+NAVBAR LINKS
+*/
+
+.nav_list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2.5rem;
+    font-size: 1.6rem;
+    padding: 1rem;
+}
+
+.nav_links {
+    padding: 1rem;
+}
+
+.nav_links:hover {
+    border: 1px dashed black;
+}
+
+#nav_cta {
+    background-color: black;
+    border-radius: .3rem;
+}
+
+#nav_cta a {
+    color: white;
+}
+
+/**
+NAVBAR DROPDOWN
+*/
+/* MAIN NAV DROPDOWN */
+.main_nav_dropdown {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    font-size: 1.6rem;
+    transition: all .5s ease-in-out;
+}
+
+/* DROPDOWN ABOUT ACTIVE*/
+#main_dropdown_about {
+    padding: 1rem 0;
+    display: flex;
+    justify-self: flex-end;
+    gap: 2rem;
+}
+
+.dropdown_links {
+    padding: 1rem;
+    font-size: 1.6rem;
+}
+
+.dropdown_links:hover {
+    border: 1px dashed black;
+}
+
+/* DROPDOWN ABOUT HIDE */
+.main_nav_dropdown_active {
+    display: none;
+    transform: translateY(-250%);
+    transition: all .5s ease-in-out;
+}
+
+/* DROPDOWN RESOURCES */
+.svg_about_active {
+    transform: rotate(180deg);
+    transition: all .3s ease-in-out;
+}
+
+.svg_about {
+    transition: all .3s ease-in-out;
+}
+
+/* RESPONSIVE NAVIGATION */
+
+.nav_list_responsive {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2.5rem;
+    font-size: 1.6rem;
+    padding: 1rem;
+}
+
+/* RESPONSIVE NAVIGATION DROPDOWN */
+
+.responsive_nav_dropdown {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2.5rem;
+    font-size: 1.6rem;
+    padding: 1rem;
+}
+
+#responsive_dropdown_about {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2.5rem;
+    font-size: 1.6rem;
+    padding: 1rem;
+}
+
+.responsive_nav_dropdown_active {
+    display: none;
+    transform: translateY(-250%);
+    transition: all .5s ease-in-out;
+}
+
+
+/* HAMBURGER MENU */
+
+.burger-menu {
+    height: 4rem;
+    width: 3.5rem;
+    padding: 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    cursor: pointer;
+    display: none;
+}
+
+.burger-bar {
+    width: 4.5rem;
+    height: .3em;
+    background-color: black;
+    border-radius: 0.5em;
+}
+
+/* <---- ANIMATIONS ---->*/
+
+/* CLICKED */
+
+.burger-bar.clicked:nth-child(1) {
+    transform: rotate(45deg) translate(1.2rem, 1.8rem);
+    transition: ease-out 0.5s;
+}
+
+.burger-bar.clicked:nth-child(2) {
+    transform: scale(0.01);
+    transition: ease-out 0.5s;
+}
+
+.burger-bar.clicked:nth-child(3) {
+    transform: rotate(135deg) translate(-0.7rem, 1.4rem);
+    transition: ease-out 0.5s;
+}
+
+/* UNCKLICKED */
+
+.burger-bar.unclicked {
+    transform: rotate(0) translate(0);
+    transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.5s;
+}
+
+/* SLIDING MENU */
+
+.hidden {
+    transform: translateY(-250%);
+    transition: 0.8s all ease-in-out;
+}
+
+/** MEDIA QUERIES */
+
+@media screen and (max-width: 900px) {
+    /* RESPONSIVE NAV */
+    .nav_list {
+        display: none;
+    }
+    .burger-menu {
+        display: flex;
+    }
+    .responsive_nav {
+        display: block;
+    }
+}

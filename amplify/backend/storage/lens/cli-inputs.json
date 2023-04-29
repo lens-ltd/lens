@@ -1,0 +1,15 @@
+{
+  "resourceName": "lens",
+  "policyUUID": "3cf72ea3",
+  "bucketName": "lens-website",
+  "storageAccess": "authAndGuest",
+  "guestAccess": [
+    "READ"
+  ],
+  "authAccess": [
+    "CREATE_AND_UPDATE",
+    "READ"
+  ],
+  "triggerFunction": "NONE",
+  "groupAccess": {}
+}
