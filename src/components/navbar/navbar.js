@@ -3,6 +3,7 @@ import './navbar.css';
 import '../../index.css';
 import { useState } from 'react';
 
+
 const Navbar = () => {
   /* TOGGLE RESPONSIVE MENU */
   const [burger_class, setBurgerClass] = useState('burger-bar unclicked');
@@ -15,7 +16,7 @@ const Navbar = () => {
       setMenuClass('responsive_nav');
     } else {
       setBurgerClass('burger-bar unclicked');
-      setMenuClass('responsive-navigation hidden');
+      setMenuClass('responsive_nav hidden');
     }
     setIsMenuClicked(!isMenuClicked);
   };
@@ -141,7 +142,7 @@ const NavLinks = ({
           <NavDropdown
           className={'responsive_nav_dropdown responsive_nav_dropdown_active'}
           listId={'responsive_dropdown_about'}
-          dropdownClass={'responsive_dropdown_links'}
+          dropdownClass={'dropdown_links'}
           />
         </span>
       )}

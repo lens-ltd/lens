@@ -22,6 +22,10 @@ NAVBAR LINKS
     padding: 1rem;
 }
 
+.nav_links a {
+    font-size: 1.6rem;
+}
+
 .nav_links:hover {
     border: 1px dashed black;
 }
@@ -68,7 +72,7 @@ NAVBAR DROPDOWN
 /* DROPDOWN ABOUT HIDE */
 .main_nav_dropdown_active {
     display: none;
-    transform: translateY(-250%);
+    /* transform: translateY(-250%); */
     transition: all .5s ease-in-out;
 }
 

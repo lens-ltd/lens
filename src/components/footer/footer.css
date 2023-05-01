@@ -1,0 +1,108 @@
+hr {
+    width: 80%;
+    margin: 0 auto;
+    border: 0;
+    height: 1px;
+    background: #333;
+    background-image: linear-gradient(to right, #ccc, #333, #ccc);
+    margin-bottom: 3rem;
+}
+
+h4 {
+    font-weight: 500;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.footer_logo {
+    width: 9rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.main_footer {
+    width: 80%;
+    margin: 0 auto;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 3rem;
+}
+
+.main_footer span {
+    display: flex;
+    gap: 2rem;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.addresses {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.addresses span {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.addresses span svg {
+    width: 1.6rem;
+    height: 1.6rem;
+}
+
+.addresses ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.footer_list {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.2rem;
+}
+
+.footer_link_icon {
+    width: 1.6rem;
+    height: 1.6rem;
+}
+
+/**
+    * MEDIA QUERIES
+*/
+
+@media screen and (max-width: 900px) {
+    /* RESPONSIVE FOOTER */
+    .main_footer {
+        gap: 2rem;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .main_footer span {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    /* MOBILE FOOTER */
+    .main_footer {
+        flex-direction: column;
+        gap: 2rem;
+    }
+}
