@@ -12,7 +12,7 @@ h4 {
     font-weight: 500;
 }
 
-section {
+footer section {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;

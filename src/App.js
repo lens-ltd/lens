@@ -10,6 +10,7 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab } from '@fortawesome/free-brands-svg-icons'
 import { fas } from '@fortawesome/free-solid-svg-icons'
 import { far } from '@fortawesome/free-regular-svg-icons'
+import Home from './pages/home';
 
 const App = () => {
   return (
@@ -19,7 +20,7 @@ const App = () => {
       </Helmet>
       <Navbar />
       <Routes>
-        <Route path="/" element={null} />
+        <Route path="/" element={<Home />} />
         <Route path="/about" element={null} />
       </Routes>
       <Footer />

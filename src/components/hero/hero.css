@@ -1,0 +1,163 @@
+/* HERO CONTAINER */
+.hero_container {
+    background-color: black;
+    height: 80vh;
+    width: 85%;
+    margin: 0 auto;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* HERO TEXT CTA CONTAINER */
+
+.hero_text_cta {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+/* HERO TEXT */
+
+.hero_text {
+    color: white;
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    padding-top: 5rem;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#hero_heading {
+    font-size: 5rem;
+    max-width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    font-weight: 600;
+    padding-bottom: 1rem;
+}
+
+#hero_subheading {
+    margin: 0 auto;
+    text-align: center;
+    font-weight: 300;
+    padding-bottom: 1rem;
+}
+
+#hero_lens_accounts_link {
+    color: var(--primary-color);
+    font-weight: 600;
+    font-size: 2rem;
+    text-decoration: none;
+    padding-bottom: 1rem;
+    font-family: 'Crimson Pro', serif;
+}
+
+#hero_lens_accounts_link:hover {
+    color: var(--primary-color);
+}
+
+#hero_lens_slogan {
+    font-size: 1.5rem;
+    font-weight: 300;
+    text-align: center;
+    padding-bottom: 1rem;
+    font-family: 'Crime Pro', serif;
+    color: var(--primary-color);
+    font-size: 1.9rem;
+}
+
+/* HERO CTA */
+
+.hero_cta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding-bottom: 1rem;
+    width: 80%;
+    margin: 0 auto;
+    margin: 2rem 0;
+}
+
+.hero_cta a {
+    text-decoration: none;
+    padding: 1.3rem 1.5rem;
+    border-radius: .3rem;
+    font-size: 1.6rem;
+}
+
+#hero_cta_contact {
+    background-color: var(--primary-color);
+    font-weight: 500;
+}
+
+#hero_cta_learn {
+    color: white;
+    font-weight: 500;
+    border: 1px solid var(--primary-color);
+}
+
+#hero_cta_contact:hover, #hero_cta_learn:hover {
+    transition: all .3s ease-in-out;
+    transform: scale(1.02);
+}
+
+/* HERO NAVIGATION */
+
+.hero_navigation {
+    width: 50%;
+    margin: 0 auto;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#hero_nav {
+    padding: 1.5rem;
+    color: white;
+    border: 1px solid white;
+    font-size: 1.6rem;
+    border-radius: .3rem;
+    transition: all .3s ease-in-out;
+}
+
+#hero_nav:hover {
+    background-color: var(--primary-color);
+    color: black;
+    transform: scale(1.02);
+    transition: all .3s ease-in-out;
+}
+
+/* HERO CTA CONTAINERS */
+
+.hero_cta_tutorial_lists {
+    display: flex;
+    flex-direction: column;
+    gap: .2rem;
+    margin: 2rem 0;
+    position: absolute;
+    transition: all .3s ease-in-out;
+}
+
+.hide_tutorial_options {
+    display: none;
+    transition: all .3s ease-in-out;
+}
+
+.hero_cta_tutorial_option a {
+    padding: 1rem;
+    font-size: 1.6rem;
+    background-color: white;
+    border-radius: .3rem;
+}
