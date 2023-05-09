@@ -44,7 +44,7 @@ a {
     color: black;
     cursor: pointer;
     align-items: center;
-    gap: 1rem;
+    gap: .5rem;
 }
 
 svg {

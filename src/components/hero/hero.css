@@ -107,7 +107,8 @@
     border: 1px solid var(--primary-color);
 }
 
-#hero_cta_contact:hover, #hero_cta_learn:hover {
+#hero_cta_contact:hover,
+#hero_cta_learn:hover {
     transition: all .3s ease-in-out;
     transform: scale(1.02);
 }
@@ -160,4 +161,156 @@
     font-size: 1.6rem;
     background-color: white;
     border-radius: .3rem;
+}
+
+/** 
+* MEDIA QUERIES
+*/
+
+/* 900 PX */
+
+@media screen and (max-width: 900px) {
+    /* FONT SIZES */
+    #hero_heading {
+        font-size: 4.5rem;
+        width: 85%;
+    }
+}
+
+/* 750 PX */
+
+@media screen and (max-width: 750px) {
+    /* HERO CONTAINER */
+    .hero_container {
+        height: 100%;
+        padding: 3rem 0;
+        gap: 2rem;
+    }
+
+    /* HERO TEXT */
+    .hero_text {
+        width: 90%;
+    }
+
+    #hero_heading {
+        font-size: 4rem;
+        width: 95%;
+    }
+
+    .hero_cta {
+        width: 90%;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 2rem;
+    }
+
+    .hero_cta span {
+        margin: 1rem 0;
+    }
+}
+
+/* 550 PX */
+
+@media screen and (max-width: 550px) {
+    /* HERO CONTAINER */
+    .hero_container {
+        width: 85%;
+        height: 100%;
+        padding: 3rem 0;
+        gap: 2rem;
+    }
+
+    /* HERO TEXT */
+    .hero_text {
+        width: 95%;
+    }
+
+    #hero_heading {
+        font-size: 3.5rem;
+        width: 95%;
+    }
+
+    .hero_cta {
+        width: 90%;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 2rem;
+    }
+
+    #hero_subheading {
+        font-size: 1.5rem;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    #hero_lens_slogan, #hero_lens_accounts_link {
+        font-size: 1.7rem;
+    }
+
+    .hero_cta span {
+        margin: 1rem 0;
+    }
+
+    /* HERO NAVIGATION */
+    .hero_navigation {
+        width: 100%;
+    }
+
+    #hero_nav {
+        padding: 1rem;
+        font-size: 1.4rem;
+    }
+}
+
+/* 350 PX */
+
+@media screen and (max-width: 350px) {
+    /* HERO CONTAINER */
+    .hero_container {
+        width: 90%;
+        height: 100%;
+        padding: 3rem 0;
+        gap: 2rem;
+    }
+
+    /* HERO TEXT */
+    .hero_text {
+        width: 95%;
+    }
+
+    #hero_heading {
+        font-size: 3rem;
+        width: 95%;
+    }
+
+    .hero_cta {
+        width: 90%;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 2rem;
+    }
+
+    #hero_subheading {
+        font-size: 1.5rem;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    #hero_lens_slogan, #hero_lens_accounts_link {
+        font-size: 1.7rem;
+    }
+
+    .hero_cta span {
+        margin: 1rem 0;
+    }
+
+    /* HERO NAVIGATION */
+    .hero_navigation {
+        width: 100%;
+    }
+
+    #hero_nav {
+        padding: 1rem;
+        font-size: 1.4rem;
+    }
 }
