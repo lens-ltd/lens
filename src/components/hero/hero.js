@@ -1,32 +1,12 @@
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './hero.css';
-import axios from 'axios';
+import downloadHelper from '../../helpers/download';
 
 const Hero = () => {
   const showTutorialOptions = () => {
     const tutorial_lists = document.querySelector('.hero_cta_tutorial_lists');
     tutorial_lists.classList.toggle('hide_tutorial_options');
-  };
-
-  const getPdfTutorial = async () => {
-    axios
-      .get(
-        'https://lens-website170952-staging.s3.amazonaws.com/tutorial/Lens+Accounts+-+Guidebook.pdf',
-        { responseType: 'blob' } // Set the response type to 'blob'
-      )
-      .then((response) => {
-        const blob = new Blob([response.data], { type: 'application/pdf' }); // Create a blob from the response data
-        const url = window.URL.createObjectURL(blob); // Generate a URL for the blob
-        const a = document.createElement('a');
-        a.href = url;
-        a.download = 'Lens Accounts - Guidebook.pdf';
-        a.click();
-        window.URL.revokeObjectURL(url); // Clean up the URL object
-      })
-      .catch((error) => {
-        console.log(error);
-      });
   };
 
   return (
@@ -63,7 +43,7 @@ const Hero = () => {
         {/* HERO CTA TUTORIAL OPTIONS */}
         <ul className="hero_cta_tutorial_lists hide_tutorial_options">
           <li className="hero_cta_tutorial_option">
-            <Link to="#" onClick={async () => getPdfTutorial()}>
+            <Link to="#" onClick={async () => downloadHelper('https://lens-website170952-staging.s3.amazonaws.com/tutorial/Lens+Accounts+-+Guidebook.pdf', 'Lens Accounts - Guidebook')}>
               <FontAwesomeIcon icon="fa-solid fa-file-pdf" /> Download PDF Guide
             </Link>
           </li>
