@@ -6,12 +6,10 @@ import '../../index.css';
 const Team = () => {
   const team_members = [
     {
-      name: 'Shingiro Christian',
+      name: 'Shingiro Christian, CPA',
       image:
         'https://lens-website170952-staging.s3.amazonaws.com/team/shingiro-christian.jpeg',
       position: 'Managing Director',
-      description:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.',
       social_media: {
         twitter: 'https://twitter.com/ShingiroCh',
         linkedin: 'https://www.linkedin.com/in/christianshingirocpa/',
@@ -22,8 +20,6 @@ const Team = () => {
       image:
         'https://lens-website170952-staging.s3.amazonaws.com/team/ntabana-joshua-kevin.jpeg',
       position: 'Admin & PR',
-      description:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.',
       social_media: {
         twitter: 'https://twitter.com/KevinNtabana',
         linkedin: 'https://www.linkedin.com/in/joshua-ntabana-90949a231/',
@@ -34,8 +30,6 @@ const Team = () => {
       image:
         'https://lens-website170952-staging.s3.amazonaws.com/team/tusifu-edison.jpeg',
       position: 'Chief Technical Officer',
-      description:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.',
       social_media: {
         twitter: 'https://twitter.com/EdisonTusifu',
         linkedin: 'https://www.linkedin.com/in/edison-tusifu-998050153/',
@@ -74,7 +68,7 @@ const Team = () => {
         <section className="team_members_container">
           {team_members.map((member, index) => {
             return (
-              <div className="team_member">
+              <div key={index} className="team_member">
                 <div className="team_member_profile">
                   <img
                     className="team_member_profile_image"
@@ -114,7 +108,7 @@ const Team = () => {
                     to={`#`}
                     className="team_member_bio_link"
                   >
-                    Bio <FontAwesomeIcon icon={icons[2].icon} />
+                    Expand <FontAwesomeIcon icon={icons[2].icon} />
                   </Link>
                 </div>
               </div>

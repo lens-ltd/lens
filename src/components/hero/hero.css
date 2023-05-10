@@ -105,6 +105,7 @@
     color: white;
     font-weight: 500;
     border: 1px solid var(--primary-color);
+    transition: all .3s ease-in-out;
 }
 
 #hero_cta_contact:hover,
@@ -122,6 +123,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    transform: translateY(0);
+    transition: all .3s ease-in-out;
+}
+
+.hero_navigation_hide {
+    transform: translateY(200%);
+    transition: all .3s ease-in-out;
 }
 
 #hero_nav {
@@ -147,13 +155,12 @@
     flex-direction: column;
     gap: .2rem;
     margin: 2rem 0;
-    position: absolute;
     transition: all .3s ease-in-out;
 }
 
 .hide_tutorial_options {
-    display: none;
     transition: all .3s ease-in-out;
+    display: none;
 }
 
 .hero_cta_tutorial_option a {
@@ -161,6 +168,14 @@
     font-size: 1.6rem;
     background-color: white;
     border-radius: .3rem;
+    transition: all .3s ease-in-out;
+}
+
+.hero_cta_tutorial_option a:hover {
+    background-color: var(--primary-color);
+    color: black;
+    transition: all .3s ease-in-out;
+    transform: scale(.90);
 }
 
 /** 
