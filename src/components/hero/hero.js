@@ -21,7 +21,7 @@ const Hero = () => {
             <p id="hero_subheading">
               Redefine Agribusiness by{' '}
               <span id="hero_lens_slogan">recording every penny</span> with{' '}
-              <Link id="hero_lens_accounts_link" to="/about">
+              <Link id="hero_lens_accounts_link" target='_blank' to="https://www.accounts.lens.rw">
                 Lens Accounts
               </Link>
             </p>
@@ -29,7 +29,7 @@ const Hero = () => {
           {/* HERO CTA */}
           <section className="hero_cta">
             <span>
-              <Link to="/contact" id="hero_cta_contact">
+              <Link to="mailto:info@lens.rw" id="hero_cta_contact">
                 Contact Us
               </Link>
             </span>

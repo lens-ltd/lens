@@ -33,7 +33,7 @@ const Portfolio = () => {
               <p id="main_product_developers">Powered by Lens, Inc.</p>
             </div>
             <div className="portfolio_main_product_cta">
-              <Link to="/products" id="main_product_cta">
+              <Link target='_blank' to="https://www.accounts.lens.rw" id="main_product_cta">
                 Get Started <FontAwesomeIcon icon={icons[0]} />
               </Link>
             </div>
