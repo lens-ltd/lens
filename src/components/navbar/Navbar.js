@@ -87,17 +87,17 @@ const NavDropdown = ({ className, listId, dropdownClass }) => {
     <div className={className}>
       <ul id={listId}>
         <li>
-          <Link to="/about/discover" className={dropdownClass}>
+          <Link to="/about" className={dropdownClass}>
             Discover Lens
           </Link>
         </li>
         <li>
-          <Link to="/about/story" className={dropdownClass}>
+          <Link to="/about" className={dropdownClass}>
             Our Story
           </Link>
         </li>
         <li>
-          <Link to="/about/team" className={dropdownClass}>
+          <Link to="/about" className={dropdownClass}>
             Our Team
           </Link>
         </li>

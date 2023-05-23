@@ -1,7 +1,7 @@
-import Hero from "../components/hero/hero";
-import Portfolio from "../components/portfolio/portfolio";
-import Team from "../components/team/team";
-import Contact from "../components/contact/contact";
+import Hero from "../components/hero/Hero";
+import Portfolio from "../components/portfolio/Portfolio";
+import Team from "../components/team/Team";
+import Contact from "../components/contact/Contact";
 
 const Home = () => {
     return (
