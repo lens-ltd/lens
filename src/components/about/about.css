@@ -90,6 +90,7 @@ ABOUT PAGE
 .about_us_button:hover {
     box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.2);
     transition: all .3s ease-in-out;
+    transform: scale(1.02);
 }
 
 /**
@@ -171,7 +172,7 @@ ABOUT PAGE
 }
 
 .niche_product_button:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 /* NYIBUTSA */
@@ -195,6 +196,10 @@ ABOUT PAGE
 .umuhinzi {
     background-color: var(--lens-umuhinzi);
     color: white;
+}
+
+.umuhinzi .niche_product_sector {
+    color: var(--primary-color);
 }
 
 .umuhinzi .niche_product_button {

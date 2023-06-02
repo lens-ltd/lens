@@ -24,7 +24,7 @@ const Portfolio = () => {
                 id="main_product_image"
                 alt="Lens Accounts Logo"
               />
-              <p id="main_product_title">Lens Accounts</p>
+              <p id="main_product_title">Lens Umuhinzi App</p>
             </div>
             <div className="portfolio_main_product_text">
               <h3 id="main_product_slogan">

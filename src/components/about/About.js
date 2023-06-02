@@ -51,22 +51,41 @@ const About = () => {
           <div className="about_niche_product umuhinzi">
             <p className="niche_product_sector">Agribusiness</p>
             <h3 className="niche_product_description">
-              <span className='niche_product_name'>Umuhinzi App</span>
+              <span className="niche_product_name">Umuhinzi App</span>
               is helping 300+ farmers keep track of all transactions while
               getting timely reports
             </h3>
-            <button className="niche_product_button">Learn More</button>
+            <a
+              className="niche_product_button"
+              target="_blank"
+              rel="noreferrer"
+              href="https://www.accounts.lens.rw"
+            >
+              Learn More
+            </a>
           </div>
           {/* ABOUT NICHE PRODUCT - NYIBUTSA */}
           <div className="about_niche_product nyibutsa">
             <p className="niche_product_sector">Personal Finance</p>
             <h3 className="niche_product_description">
-              <span className='niche_product_name'>Nyibutsa</span>
-              protects your integrity (and finances) with effective debt management and customized reports. 
+              <span className="niche_product_name">Nyibutsa</span>
+              protects your integrity (and finances) with effective debt
+              management and customized reports.
             </h3>
-            <button className="niche_product_button">Learn More</button>
+            <a
+              className="niche_product_button"
+              target="_blank"
+              rel="noreferrer"
+              href="https://play.google.com/store/apps/details?id=com.tusifuedison.nyibutsa"
+            >
+              Download App
+            </a>
           </div>
         </div>
+      </section>
+      {/* ABOUT TEAM */}
+      <section className="about_team">
+        <div className="about_team_header"></div>
       </section>
     </div>
   );
