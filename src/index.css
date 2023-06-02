@@ -5,6 +5,10 @@
     --primary-color: rgba(242, 231, 213, 1);
     --primary-color-light: rgba(242, 231, 213, 0.2);
     --primary-color-lowest: rgba(242, 231, 213, 0.1);
+
+    --lens-umuhinzi: #207519;
+    --lens-nyibutsa: rgb(30,49,67);
+    
     font-family: 'Poppins', 'sans-serif';
 }
 
