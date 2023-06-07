@@ -23,6 +23,25 @@ const About = () => {
           />
         </div>
       </section>
+      {/* ABOUT MISSION AND VISION */}
+      <section className="about_vision_mission">
+        <div className="about_vision">
+          <p>Our Vision</p>
+          <h3>
+            To provide advanced bookkeeping solutions to help individuals and
+            businesses manage their finances and maintain accurate records
+          </h3>
+        </div>
+        <div className="about_mission">
+          <p>Our Mission</p>
+          <h3>
+            Our mission is to empower individuals and businesses with the tools
+            and expertise to manage their finances effectively by providing transparent and
+            granular financial records for informed decision-making and
+            long-term success.”
+          </h3>
+        </div>
+      </section>
       {/* ABOUT US */}
       <section className="about_us">
         <h2>

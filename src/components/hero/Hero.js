@@ -16,10 +16,10 @@ const Hero = () => {
         <span className="hero_text_cta">
           <section className="hero_text">
             <h1 id="hero_heading">
-              Bringing effective bookkeeping to agriculture
+            Bringing effective bookkeeping to businesses and individuals
             </h1>
             <p id="hero_subheading">
-              Redefine Agribusiness by{' '}
+            Redefine your Finances by{' '}
               <span id="hero_lens_slogan">recording every penny</span> with{' '}
               <Link id="hero_lens_accounts_link" target='_blank' to="https://www.accounts.lens.rw">
                 Lens Accounts
